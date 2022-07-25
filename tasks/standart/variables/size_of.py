@@ -19,10 +19,10 @@ def size_in_kb(some_object: Any) -> str:
     :return: стока вида "1.23 кб"
     """
 
-    return None
+    return str(round((getsizeof(some_object) / 1024), 2)) + ' кб'
 
 
 if __name__ == '__main__':
-    print("Размер 3 ** 90900: ", size_in_kb(3 ** 90900), "кб")
-    print("Размер списка из 100 элементов: ", size_in_kb([i for i in range(100)]), "кб")
-    print("Размер словаря из 100 элементов: ", size_in_kb({i: i for i in range(100)}), "кб")
+    print("Размер 3 ** 90900: ", size_in_kb(3 ** 90900))
+    print("Размер списка из 100 элементов: ", size_in_kb([i for i in range(100)]))
+    print("Размер словаря из 100 элементов: ", size_in_kb({i: i for i in range(100)}))

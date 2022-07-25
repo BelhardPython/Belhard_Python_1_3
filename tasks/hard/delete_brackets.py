@@ -17,10 +17,14 @@
 - 'Падал(лишнее (лишнее) лишнее) прошлогодний снег (лишнее)' -> 'Падал прошлогодний снег'
 """
 
+import re
+
 
 def shortener(text):
 
-    return None
+    while re.search('\([^(]*?\)', text):
+        text = re.sub('\([^(]*?\)', '', text)
+    return text.strip()
 
 
 if __name__ == '__main__':
