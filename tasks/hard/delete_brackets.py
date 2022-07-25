@@ -22,8 +22,8 @@ import re
 
 def shortener(text):
 
-    while re.search('\([^(]*?\)', text):
-        text = re.sub('\([^(]*?\)', '', text)
+    while re.search(r'\([^(]*?\)', text):
+        text = re.sub(r'\([^(]*?\)', '', text)
     return text.strip()
 
 
