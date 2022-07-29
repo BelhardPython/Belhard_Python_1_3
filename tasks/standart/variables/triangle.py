@@ -25,7 +25,7 @@ def triangle(side_1: int, side_2: int) -> tuple:
     :rtype: tuple
     """
 
-    return None
+    return (float((side_1 ** 2 + side_2 ** 2) ** 0.5), float((side_1 ** 2 + side_2 ** 2) ** 0.5 + side_1 + side_2), float(0.5 * side_1 * side_2))
 
 
 if __name__ == '__main__':

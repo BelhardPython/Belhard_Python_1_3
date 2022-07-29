@@ -39,7 +39,5 @@ def print_recipe() -> str:
 {s}'''
 
 
-
 if __name__ == '__main__':
     print(print_recipe())
-

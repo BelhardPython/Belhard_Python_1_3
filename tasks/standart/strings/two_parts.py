@@ -15,7 +15,6 @@
 - 'hello' -> ('he', 'llo')
 - 'some' -> ('so', 'me')
 """
-from math import floor
 
 
 def split_to_parts(str_to_split: str) -> tuple:
